@@ -6,7 +6,9 @@ list_load :-
 
 list_go :-
 	list_load,
-	list_first_element.
+	list_first_element,
+	list_last_element,
+	list_my_penultimate.
 
 list_first_element :-
 	see(user),
@@ -17,3 +19,8 @@ list_last_element :-
 	see(user),
 	write('A tail is not so hard with recursion.'),
 	run_tests(my_lists:my_last).
+
+list_my_penultimate :-
+	see(user),
+	write('To find the second to last, you must know you have two'),
+	run_tests(my_lists:my_penultimate).
