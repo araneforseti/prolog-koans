@@ -21,4 +21,13 @@ test(my_element_at, [fail]) :-
 test(my_element_at, [fail]) :-
 	my_element_at(c, [a,b,c,d], 2).
 
+test(my_number_of) :-
+	my_number_of(3, [a,b,c]).
+
+test(my_reverse) :-
+	reverse([a,b,c,d],[d,c,b,a]).
+
+test(my_palindrome) :-
+	is_palindrome([x,a,m,a,x]).
+
 :- end_tests(my_lists).
