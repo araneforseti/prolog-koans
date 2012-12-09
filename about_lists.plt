@@ -30,4 +30,7 @@ test(my_reverse) :-
 test(is_palindrome) :-
 	is_palindrome([x,a,m,a,x]).
 
+test(my_flatten) :-
+	my_flatten([a, [b, [c,d], e]], [a,b,c,d,e]).
+
 :- end_tests(about_lists).

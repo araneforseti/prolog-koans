@@ -48,3 +48,8 @@ list_palindrome :-
 	see(user),
 	write('A palindrome is the same when reversed'),
 	run_tests(about_lists:is_palindrome).
+
+lists_flatten :-
+	see(user),
+	write('Predefined predicates is_list/1 and append/3 might be of use'),
+	run_tests(about_lists:my_flatten).
