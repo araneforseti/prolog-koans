@@ -1,5 +1,5 @@
-:- begin_tests(my_lists).
-:- use_module(my_lists).
+:- begin_tests(about_lists).
+:- use_module(about_lists).
 
 test(my_first) :-
 	my_first(a, [a,b,c]).
@@ -27,7 +27,7 @@ test(my_number_of) :-
 test(my_reverse) :-
 	reverse([a,b,c,d],[d,c,b,a]).
 
-test(my_palindrome) :-
+test(is_palindrome) :-
 	is_palindrome([x,a,m,a,x]).
 
-:- end_tests(my_lists).
+:- end_tests(about_lists).
