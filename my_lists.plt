@@ -3,6 +3,8 @@
 
 test(my_first) :-
 	my_first(a, [a,b,c]).
+test(my_first, [fail]) :- 
+	my_first(b, [a,b,c]).
 
 test(my_last,[nondet]) :-
 	my_last(c, [a,b,c]).
