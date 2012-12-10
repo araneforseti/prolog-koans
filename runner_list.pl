@@ -22,7 +22,8 @@ list_go :-
 	list_encode_direct,
 	list_drop,
 	list_split,
-	list_slice.
+	list_slice,
+	list_rotate.
 
 list_first_element :-
 	see(user),
@@ -118,3 +119,8 @@ list_slice :-
 	see(user),
 	write('Extracting a list is not so difficult. Start the count with 1 for this instance.'),
 	run_tests(about_lists:my_slice).
+
+list_rotate :-
+	see(user),
+	write('Rotating is not too bad now that you can slice'),
+	run_tests(about_lists:my_rotate).

@@ -73,4 +73,7 @@ test(my_split) :-
 test(my_slice) :-
 	my_slice([a,b,c,d,e,g,h,i,k],3,7,[c,d,e,f,g]).
 
+test(my_rotate) :-
+	my_rotate([a,b,c,d,e,f,g,h],3,[d,e,f,g,h,a,b,c]).
+
 :- end_tests(about_lists).
