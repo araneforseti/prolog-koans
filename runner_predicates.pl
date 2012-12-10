@@ -1,12 +1,12 @@
-:- module(runner_fact, [fact_go/0]).
+:- module(runner_predicates, [predicates_go/0]).
 
-fact_go :-
-	[fact],
-	load_test_files(fact),
-	fact_initial.
+predicates_go :-
+	[about_predicates],
+	load_test_files(about_predicates),
+	predicates_initial.
 	
 
-fact_initial :-
+predicates_initial :-
 	see(user),
 	write('To assert the truth, one must know the facts'),
-	run_tests(fact:parent).
+	run_tests(about_predicates:parent).
