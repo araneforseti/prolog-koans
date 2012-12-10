@@ -15,7 +15,11 @@ list_go :-
 	list_palindrom,
 	list_flatten,
 	list_compress,
-	list_compress_single.
+	list_pack,
+	list_encode,
+	list_encode_modified,
+	list_encode_reverse,
+	list_encode_direct.
 
 list_first_element :-
 	see(user),
@@ -62,7 +66,27 @@ lists_compress :-
 	write('Many definitions will be required'),
 	run_tests(about_lists:my_compress).
 
-lists_compress_single :-
+lists_pack :-
 	see(user),
-	write('It is possible to avoid duplicate elements'),
-	run_tests(about_lists:my_compress_single).
+	write('Placing items into sublists is not so hard'),
+	run_tests(about_lists:my_pack).
+
+lists_encode :-
+	see(user),
+	write('Using the previously made predicate will be of use here.'),
+	run_tests(about_lists:my_encode).
+
+lists_encode_modified :-
+	see(user),
+	write('Non-duplicated elements should be directly copied in this one.'),
+	run_tests(about_lists:my_encode_modified).
+
+lists_encode_reverse :-
+	see(user),
+	write('Can you reverse what once was done?'),
+	run_tests(about_lists:my_encode_reverse).
+
+lists_encode_direct :-
+	see(user),
+	write('Can you encode without creating sublists, but instead counting directly?'),
+	run_tests(about_lists:my_encode_direct).
