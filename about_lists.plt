@@ -58,4 +58,15 @@ test(my_encode_reverse) :-
 test(my_encode_direct) :-
 	my_encode_direct([a,a,a,a,b,c,c,a,a,d,e,e,e,e],[[4,a],b,[2,c],[2,a],d,[4,e]]).
 
+test(my_duplicate) :-
+	my_duplicate([a,b,c,d],[a,a,a,b,b,b,c,c,c,d,d,d]).
+
+test(my_duplicate_for_n) :-
+	my_duplicate_for_n([a,b,c],2,[a,a,b,b,c,c]).
+
+test(my_drop) :-
+	my_drop([a,b,c,d,e,f,g,h,i,k],3,[a,b,d,e,g,h,k]).
+
+
+
 :- end_tests(about_lists).

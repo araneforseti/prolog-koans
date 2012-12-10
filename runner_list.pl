@@ -19,7 +19,8 @@ list_go :-
 	list_encode,
 	list_encode_modified,
 	list_encode_reverse,
-	list_encode_direct.
+	list_encode_direct,
+	list_drop.
 
 list_first_element :-
 	see(user),
@@ -56,37 +57,52 @@ list_palindrome :-
 	write('A palindrome is the same when reversed'),
 	run_tests(about_lists:is_palindrome).
 
-lists_flatten :-
+list_flatten :-
 	see(user),
 	write('Predefined predicates is_list/1 and append/3 might be of use'),
 	run_tests(about_lists:my_flatten).
 
-lists_compress :-
+list_compress :-
 	see(user),
 	write('Many definitions will be required'),
 	run_tests(about_lists:my_compress).
 
-lists_pack :-
+list_pack :-
 	see(user),
 	write('Placing items into sublists is not so hard'),
 	run_tests(about_lists:my_pack).
 
-lists_encode :-
+list_encode :-
 	see(user),
 	write('Using the previously made predicate will be of use here.'),
 	run_tests(about_lists:my_encode).
 
-lists_encode_modified :-
+list_encode_modified :-
 	see(user),
 	write('Non-duplicated elements should be directly copied in this one.'),
 	run_tests(about_lists:my_encode_modified).
 
-lists_encode_reverse :-
+list_encode_reverse :-
 	see(user),
 	write('Can you reverse what once was done?'),
 	run_tests(about_lists:my_encode_reverse).
 
-lists_encode_direct :-
+list_encode_direct :-
 	see(user),
 	write('Can you encode without creating sublists, but instead counting directly?'),
 	run_tests(about_lists:my_encode_direct).
+
+list_duplicate :-
+	see(user),
+	write('Introducing duplication is simple.'),
+	run_tests(about_lists:my_duplicate).
+
+list_duplicate_n :-
+	see(user),
+	write('Duplicating a specified number of times could require math.'),
+	run_tests(about_lists:my_duplicate_for_n).
+
+list_drop :-
+	see(user),
+	write('Dropping every n elements requires list traversal'),
+	run_tests(about_lists:my_drop).
