@@ -67,6 +67,10 @@ test(my_duplicate_for_n) :-
 test(my_drop) :-
 	my_drop([a,b,c,d,e,f,g,h,i,k],3,[a,b,d,e,g,h,k]).
 
+test(my_split) :-
+	my_split([a,b,c,d,e,f,g,h,i,k],3,[a,b,c],[d,e,f,g,h,i,k]).
 
+test(my_slice) :-
+	my_slice([a,b,c,d,e,g,h,i,k],3,7,[c,d,e,f,g]).
 
 :- end_tests(about_lists).

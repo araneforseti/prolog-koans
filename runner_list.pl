@@ -20,7 +20,9 @@ list_go :-
 	list_encode_modified,
 	list_encode_reverse,
 	list_encode_direct,
-	list_drop.
+	list_drop,
+	list_split,
+	list_slice.
 
 list_first_element :-
 	see(user),
@@ -106,3 +108,13 @@ list_drop :-
 	see(user),
 	write('Dropping every n elements requires list traversal'),
 	run_tests(about_lists:my_drop).
+
+list_split :-
+	see(user),
+	write('Can you split a list based on a given size without using a predefined predicate?'),
+	run_tests(about_lists:my_split).
+
+list_slice :-
+	see(user),
+	write('Extracting a list is not so difficult. Start the count with 1 for this instance.'),
+	run_tests(about_lists:my_slice).
