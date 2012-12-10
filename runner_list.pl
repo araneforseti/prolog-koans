@@ -12,7 +12,10 @@ list_go :-
 	list_my_element_at,
 	list_my_number_of,
 	list_my_reverse,
-	list_palindrom.
+	list_palindrom,
+	list_flatten,
+	list_compress,
+	list_compress_single.
 
 list_first_element :-
 	see(user),
@@ -53,3 +56,13 @@ lists_flatten :-
 	see(user),
 	write('Predefined predicates is_list/1 and append/3 might be of use'),
 	run_tests(about_lists:my_flatten).
+
+lists_compress :-
+	see(user),
+	write('Many definitions will be required'),
+	run_tests(about_lists:my_compress).
+
+lists_compress_single :-
+	see(user),
+	write('It is possible to avoid duplicate elements'),
+	run_tests(about_lists:my_compress_single).

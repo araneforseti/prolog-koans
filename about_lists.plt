@@ -33,4 +33,10 @@ test(is_palindrome) :-
 test(my_flatten) :-
 	my_flatten([a, [b, [c,d], e]], [a,b,c,d,e]).
 
+test(my_compress) :-
+	my_compress([a,a,a,a,b,b,b,b,c,c,c,c,a,a,d,e,e,e,e],[a,b,c,a,d,e]).
+
+test(my_compress_single) :-
+	my_compress([a,a,a,a,b,b,b,b,c,c,c,c,a,a,d,e,e,e,e],[a,b,c,d,e]).
+
 :- end_tests(about_lists).
