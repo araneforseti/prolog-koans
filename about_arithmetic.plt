@@ -6,4 +6,8 @@ test(is_prime) :-
 test(is_prime, [fail]) :-
 	is_prime(6).
 
+test(prime_factors) :-
+	prime_factors(315,L),
+	L = [3,3,5,7].
+
 :- end_tests(about_arithmetic).
