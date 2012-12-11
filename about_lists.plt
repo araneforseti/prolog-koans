@@ -76,4 +76,7 @@ test(my_slice) :-
 test(my_rotate) :-
 	my_rotate([a,b,c,d,e,f,g,h],3,[d,e,f,g,h,a,b,c]).
 
+test(remove_at) :-
+	remove_at(b,[a,b,c,d],2,[a,c,d]),
+
 :- end_tests(about_lists).

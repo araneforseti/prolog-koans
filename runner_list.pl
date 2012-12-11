@@ -124,3 +124,8 @@ list_rotate :-
 	see(user),
 	write('Rotating is not too bad now that you can slice'),
 	run_tests(about_lists:my_rotate).
+
+list_remove_at :-
+	see(user),
+	write('First element is what would be removed, 2nd is the original array, 3rd is the index to remove (count starts at 1), and 4th is what is left behind.'),
+	run_tests(about_lists:remove_at).

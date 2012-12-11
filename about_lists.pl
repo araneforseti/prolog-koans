@@ -4,7 +4,7 @@
 	my_compress/2, my_pack/2, my_encode/2, my_encode_modified/2,
 	my_encode_reverse/2, my_encode_direct/2, my_duplicate/2,
 	my_duplicate_for_n/3, my_drop/3, my_split/4, my_slice/4,
-	my_rotate/3]).
+	my_rotate/3, remove_at/4, insert_at/4]).
 
 my_first(_,_) :- false.
 
@@ -49,3 +49,5 @@ my_slice(_,_,_,_) :- false.
 my_split(_,_,_,_) :- false.
 
 my_rotate(_,_,_) :- false.
+
+remove_at(_,_,_,_) :- false.
