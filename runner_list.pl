@@ -25,7 +25,8 @@ list_go :-
 	list_slice,
 	list_rotate,
 	list_remove_at,
-	list_insert_at.
+	list_insert_at,
+	list_range.
 
 list_first_element :-
 	see(user),
@@ -136,3 +137,8 @@ list_insert_at :-
 	see(user),
 	write('This time, insert the element specified in 1 into what is specified in two at 3 with result 4.').
 	run_tests(about_lists:insert_at).
+
+list_range :-
+	see(user),
+	write('Creating a range is simple as counting'),
+	run_tests(about_lists:range).
