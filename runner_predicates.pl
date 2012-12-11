@@ -1,6 +1,10 @@
 :- module(runner_predicates, [predicates_go/0]).
 
+run_koan(X,L) :-
+	koan_helper(X, about_predicates:L).
+
 predicates_go :-
+	[runner_helper],
 	[about_predicates],
 	load_test_files(about_predicates),
 	predicates_initial,
@@ -8,11 +12,7 @@ predicates_go :-
 	
 
 predicates_initial :-
-	see(user),
-	write('To assert the truth, one must know the facts'),
-	run_tests(about_predicates:parent).
+	run_koan('To assert the truth, one must know the facts', parent).
 
 predicates_equality :-
-	see(user),
-	write('Equality can be specified with use of the same name'),
-	run_tests(about_predicates:equal).
+	run_koan('Equality can be specified with use of the same name', equal).
