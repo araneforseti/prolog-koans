@@ -79,4 +79,7 @@ test(my_rotate) :-
 test(remove_at) :-
 	remove_at(b,[a,b,c,d],2,[a,c,d]),
 
+test(insert_at) :-
+	insert_at(alfa,[a,b,c,d],2,[a,alfa,b,c,d]).
+
 :- end_tests(about_lists).

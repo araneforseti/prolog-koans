@@ -23,7 +23,9 @@ list_go :-
 	list_drop,
 	list_split,
 	list_slice,
-	list_rotate.
+	list_rotate,
+	list_remove_at,
+	list_insert_at.
 
 list_first_element :-
 	see(user),
@@ -129,3 +131,8 @@ list_remove_at :-
 	see(user),
 	write('First element is what would be removed, 2nd is the original array, 3rd is the index to remove (count starts at 1), and 4th is what is left behind.'),
 	run_tests(about_lists:remove_at).
+
+list_insert_at :-
+	see(user),
+	write('This time, insert the element specified in 1 into what is specified in two at 3 with result 4.').
+	run_tests(about_lists:insert_at).

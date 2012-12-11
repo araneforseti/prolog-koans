@@ -51,3 +51,5 @@ my_split(_,_,_,_) :- false.
 my_rotate(_,_,_) :- false.
 
 remove_at(_,_,_,_) :- false.
+
+insert_at(_,_,_,_) :- false.
