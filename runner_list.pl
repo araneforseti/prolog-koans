@@ -16,7 +16,7 @@ list_go :-
 	list_my_element_at,
 	list_my_number_of,
 	list_my_reverse,
-	list_palindrom,
+	list_palindrome,
 	list_flatten,
 	list_compress,
 	list_pack,
