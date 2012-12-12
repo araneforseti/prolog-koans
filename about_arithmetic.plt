@@ -21,4 +21,7 @@ test(goldbach_conjecture) :-
 test(greatest_common_divisor) :-
 	greatest_common_divisor(36, 63, 9).
 
+test(is_coprime) :-
+	is_coprime(35,64).
+
 :- end_tests(about_arithmetic).

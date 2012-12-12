@@ -16,7 +16,8 @@ arithmetic_go :-
 	arithmetic_prime_factors_multiplicity,
 	arithmetic_range_prime,
 	arithmetic_goldbach_conjecture,
-	arithmetic_greatest_common_divisor.
+	arithmetic_greatest_common_divisor,
+	arithmetic_is_coprime.
 
 arithmetic_prime :-
 	run_koan('Can you write a predicate for prime numbers?', is_prime).
@@ -35,3 +36,6 @@ arithmetic_goldbach_conjecture :-
 
 arithmetic_greatest_common_divisor :-
 	run_koan('Determine the greatest common divisor between two numbers', greatest_common_divisor).
+
+arithmetic_is_coprime :-
+	run_koan('This goal is true if the greatest common divisor of what is passed is 1', is_coprime).
