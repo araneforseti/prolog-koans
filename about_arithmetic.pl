@@ -1,5 +1,8 @@
-:- module(about_arithmetic, [is_prime/1, prime_factors/2]).
+:- module(about_arithmetic, 
+	[is_prime/1, prime_factors/2, prime_factors_multiplicity/2]).
 
 is_prime(_) :- false.
 
 prime_factors(_,_) :- false.
+
+prime_factors_multiplicity(_,_) :- false.
