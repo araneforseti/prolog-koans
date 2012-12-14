@@ -6,4 +6,6 @@ go :-
 	[runner_list],
 	runner_list:list_go,
 	[runner_arithmetic],
-	runner_arithmetic:arithmetic_go.
+	runner_arithmetic:arithmetic_go,
+	[runner_logic_codes],
+	runner_logic_codes:logic_go.
