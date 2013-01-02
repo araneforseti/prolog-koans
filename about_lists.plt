@@ -36,22 +36,24 @@ test(is_palindrome) :-
 test(is_palindrome, [fail]) :-
 	is_palindrome([a,b,c,d]).
 
-test(my_flatten) :-
+test(my_flatten, [nondet]) :-
+  my_flatten([], []),
+  my_flatten(x, [x]),
 	my_flatten([a, [b, [c,d], e]], [a,b,c,d,e]).
 
-test(my_compress) :-
+test(my_compress, [nondet]) :-
 	my_compress([a,a,a,a,b,b,b,b,c,c,c,c,a,a,d,e,e,e,e],[a,b,c,a,d,e]).
 
-test(my_pack) :-
+test(my_pack, [nondet]) :-
 	my_pack([a,a,a,b,c,c,a,a,d,e,e,e,e],[[a,a,a],[b],[c,c],[a,a],[d],[e,e,e,e]]).
 
-test(my_encode) :-
+test(my_encode, [nondet]) :-
 	my_encode([a,a,a,a,b,c,c,a,a,d,e,e,e,e],[[4,a],[1,b],[2,c],[2,a],[1,d],[4,e]]).
 
-test(my_encode_modified) :-
+test(my_encode_modified, [nondet]) :-
 	my_encode_modified([a,a,a,a,b,c,c,a,a,d,e,e,e,e],[[4,a],b,[2,c],[2,a],d,[4,e]]).
 
-test(my_encode_reverse) :-
+test(my_encode_reverse, [nondet]) :-
 	my_encode_reverse([[4,a],b,[2,c],[2,a],d,[4,e]],[a,a,a,a,b,c,c,a,a,d,e,e,e,e]).
 
 test(my_encode_direct) :-
