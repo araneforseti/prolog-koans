@@ -56,7 +56,7 @@ test(my_encode_modified, [nondet]) :-
 test(my_encode_reverse, [nondet]) :-
 	my_encode_reverse([[4,a],b,[2,c],[2,a],d,[4,e]],[a,a,a,a,b,c,c,a,a,d,e,e,e,e]).
 
-test(my_encode_direct) :-
+test(my_encode_direct, [nondet]) :-
 	my_encode_direct([a,a,a,a,b,c,c,a,a,d,e,e,e,e],[[4,a],b,[2,c],[2,a],d,[4,e]]).
 
 test(my_duplicate) :-
@@ -65,25 +65,25 @@ test(my_duplicate) :-
 test(my_duplicate_for_n) :-
 	my_duplicate_for_n([a,b,c],2,[a,a,b,b,c,c]).
 
-test(my_drop) :-
+test(my_drop, [nondet]) :-
 	my_drop([a,b,c,d,e,f,g,h,i,k],3,[a,b,d,e,g,h,k]).
 
-test(my_split) :-
+test(my_split, [nondet]) :-
 	my_split([a,b,c,d,e,f,g,h,i,k],3,[a,b,c],[d,e,f,g,h,i,k]).
 
-test(my_slice) :-
-	my_slice([a,b,c,d,e,g,h,i,k],3,7,[c,d,e,f,g]).
+test(my_slice, [nondet]) :-
+	my_slice([a,b,c,d,e,f,g,h,i,k],3,7,[c,d,e,f,g]).
 
-test(my_rotate) :-
+test(my_rotate,[nondet]) :-
 	my_rotate([a,b,c,d,e,f,g,h],3,[d,e,f,g,h,a,b,c]).
 
-test(remove_at) :-
+test(remove_at,[nondet]) :-
 	remove_at(b,[a,b,c,d],2,[a,c,d]).
 
-test(insert_at) :-
+test(insert_at,[nondet]) :-
 	insert_at(alfa,[a,b,c,d],2,[a,alfa,b,c,d]).
 
-test(range) :-
+test(range,[nondet]) :-
 	range(4,9,[4,5,6,7,8,9]).
 
 
