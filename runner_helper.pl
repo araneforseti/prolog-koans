@@ -1,6 +1,7 @@
 :- module(runner_helper, [koan_helper/2]).
 
 koan_helper(X,L) :-
+  write_hint(X),
   Result = run_tests(L),
   check_result(X, Result).
 
