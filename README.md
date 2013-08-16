@@ -14,6 +14,6 @@ Non-interactive run with swipl:
 
 Interactive run in interpreter:
 - Start your prolog interpreter in the main directory (I personally used swi-prolog and can verify this suite works with it).
-- Consult the runner file with "[runner]"
+- Consult the runner file with "[runner]."
 - Run the test suite with "go."
 - As the test suite goes, it prints hints and pass/fail for each test.
