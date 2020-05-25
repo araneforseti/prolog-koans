@@ -1,4 +1,4 @@
-:- module(runner_list, [list_go]).
+:- module(runner_list, [list_go/0]).
 
 run_koan(X,L) :-
 	koan_helper(X, about_lists:L).
